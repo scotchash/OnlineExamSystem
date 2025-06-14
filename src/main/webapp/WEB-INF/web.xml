@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Deployment descriptor (web.xml) for Online Exam System 
+    Configures the Jakarta EE web application
+-->
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    
+    <!-- Application display name (shown in servers/admin consoles) -->
+    <display-name>OnlineExamSystem</display-name>
+    
+    <!-- Welcome file configuration - determines default landing page -->
+    <welcome-file-list>
+        <!-- First file to look for when accessing the root URL -->
+        <welcome-file>login.jsp</welcome-file>
+        <!-- 
+            Additional welcome files could be added as fallbacks:
+            <welcome-file>index.html</welcome-file>
+            <welcome-file>index.jsp</welcome-file>
+        -->
+    </welcome-file-list>
+    
+</web-app>
